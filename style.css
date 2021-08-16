@@ -1,0 +1,156 @@
+/* 
+    Rheme Name:Tout Mobile
+    Theme URI: toutmobile.fr
+    Author: Sanil CHAKMA
+    Description: Site proposant des accessoires de mobile et tout ce qui est en rapport à l'informatique
+    Version: 1.0
+    Text-domain: tout-mobile
+    Tags: e-commerce, header, footer,...
+*/
+
+/*General*/
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* .search-form div {
+  width: 300px;
+  margin: 0 auto;
+} */
+
+.brand {
+  background: blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
+.brand img {
+  margin: 15px 0;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.search-submit {
+  height: 50px;
+  clip-path: polygon(
+    50% 0%,
+    80% 10%,
+    100% 35%,
+    100% 70%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
+    0% 70%,
+    0% 35%,
+    20% 10%
+  );
+  background: url(https://previews.123rf.com/images/kappa06/kappa062005/kappa06200500036/146982351-logo-with-a-modern-and-clean-search-form.jpg);
+
+  width: 50px;
+  background: blue;
+}
+
+.main-menu .dropdown:hover > .dropdown-menu,
+.main-menu .dropup:hover > .dropup-menu {
+  display: block;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+/* div.cart {
+  background: pink;
+} */
+
+.cart .cart-icon {
+  background: url("img/cart.svg");
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 45px;
+  color: transparent;
+}
+.cart .cart-icon:hover {
+  color: blue;
+  background: white;
+}
+#menu-menu-principal li {
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+.container.shop-content {
+  width: 50%;
+}
+
+section.footer-widgets {
+  text-align: right;
+}
+
+/* #menu-menu-principal li a {
+  color: white;
+} */
+
+/* .main-menu {
+  background: rgba(0, 0, 255, 0.6);
+  padding: auto 50px;
+}
+.main-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.main-menu ul li {
+  background: blue;
+  border-radius: 30%;
+  padding: 12px;
+  margin: auto 5 auto 0;
+}
+.main-menu ul li:hover {
+  background: blueviolet;
+  transform: translateY(10px);
+}
+.main-menu ul li a {
+  color: white;
+}
+.main-menu ul li a:hover {
+  text-decoration: none;
+} */
+
+/*Checkout Page*/
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background: rgb(28, 255, 8);
+}
+/* Woocommerce */
+
+/* Grid System */
+.woocommerce .col2-set .col-1,
+.woocommerce .col2-set .col-2 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media all and (max-width: 767 px) {
+  .woocommerce .col2-set .col-1,
+  .woocommerce .col2-set .col-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
